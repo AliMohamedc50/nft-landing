@@ -14,3 +14,49 @@
     --background: #111111;
     --font-family: "Inter", sans-serif;
 }
+
+
+[data-theme="light"] {
+    --background: #ffffff;
+    --accent-color1: #000000;
+    --accent-color2: #eeeeee;
+    --accent-color3: #777777;
+    --card-color: #eeeeee;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.app-container {
+    background-color: var(--background);
+    font-family: var(--font-family);
+    overflow-x: hidden;
+    transition: 0.5s ease-in-out;
+    padding: 2rem 4rem;
+
+    @media screen and (min-width: 280px) and (max-width: 1080px) {
+        padding: 0;
+    }
+}
+
+@media only screen and (min-device-width: 280px) and (max-device-width: 1080px) {
+    .app-container::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+::-webkit-scrollbar {
+    background-color: #111111;
+    width: 0.2rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--orange);
+}
