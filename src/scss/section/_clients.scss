@@ -1,0 +1,10 @@
+.client{
+    padding: 3rem 0;
+    .container {
+        .clients-container {
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            text-align: center;
+        }
+    }
+}
