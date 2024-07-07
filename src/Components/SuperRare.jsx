@@ -58,7 +58,7 @@ return (
           price={price}
           tag={tag}
           time={time}
-          index={i}
+          key={i}
         />
       ))}
     </div>
