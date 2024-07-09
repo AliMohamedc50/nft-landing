@@ -9,7 +9,6 @@ import Release from './Components/Release';
 import ScrollToTop from './Components/ScrollToTop'
 import Signup from './Components/Signup';
 import SuperRare from './Components/SuperRare';
-
 import "./scss/index.scss";
 
 function App() {
