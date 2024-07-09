@@ -1,4 +1,7 @@
+
 import './App.css'
+import scrollreveal from "scrollreveal";
+
 import Clients from './Components/Clients';
 import Footer from './Components/Footer';
 import Free from './Components/Free';
@@ -10,6 +13,8 @@ import ScrollToTop from './Components/ScrollToTop'
 import Signup from './Components/Signup';
 import SuperRare from './Components/SuperRare';
 import "./scss/index.scss";
+
+
 
 function App() {
 
