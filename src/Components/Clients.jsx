@@ -8,7 +8,7 @@ import clients5 from "../assets/clients5.png";
 const Clients = () => {
   let data = [clients1, clients2, clients3, clients4, clients5];
   return (
-    <div className="client">
+    <div className="client" data-aos="fade-up" data-aos-duration="1000">
       <div className="container">
         <div className="clients-container">
           {data.map((client, i) => (

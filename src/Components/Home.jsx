@@ -2,7 +2,7 @@ import React from 'react'
 import home from "../assets/home.png"
 const Home = () => {
   return (
-    <div className="home">
+    <div className="home" data-aos="fade-up" data-aos-duration="1000">
       <div className="container">
         <div className="content">
           <p className="sub-title">Launching Soon</p>

@@ -3,7 +3,7 @@ import eth1 from "../assets/eth1.png"
 import eth2 from "../assets/eth2.png"
 const Liks = () => {
   return (
-    <div className="like">
+    <div className="like" data-aos="fade-up" data-aos-duration="1000">
       <div className="container">
         <div className="content">
           <div className="image">

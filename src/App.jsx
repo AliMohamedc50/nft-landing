@@ -1,6 +1,5 @@
 
 import './App.css'
-import scrollreveal from "scrollreveal";
 
 import Clients from './Components/Clients';
 import Footer from './Components/Footer';
@@ -12,12 +11,19 @@ import Release from './Components/Release';
 import ScrollToTop from './Components/ScrollToTop'
 import Signup from './Components/Signup';
 import SuperRare from './Components/SuperRare';
+
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 import "./scss/index.scss";
+import { useEffect } from 'react';
 
 
 
 function App() {
-
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <div className="app-container">
       <ScrollToTop />

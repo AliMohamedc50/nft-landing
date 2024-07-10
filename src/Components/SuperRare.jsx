@@ -41,7 +41,7 @@ const data = [
 ];
 
 return (
-  <div className="super-rare">
+  <div className="super-rare" data-aos="fade-up" data-aos-duration="1000">
     <div className="title-container">
       <h2 className="title">LE Super Rare Auction</h2>
       <p className="desc">
@@ -50,7 +50,7 @@ return (
       </p>
     </div>
     <div className="cards">
-      {data.map(({image, series, title, price, tag, time}, i) => (
+      {data.map(({ image, series, title, price, tag, time }, i) => (
         <Card
           image={image}
           series={series}

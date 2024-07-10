@@ -28,7 +28,11 @@ const Footer = () => {
       <FaTiktok />,
     ];
   return (
-    <footer>
+    <footer
+      data-aos="fade-down"
+      data-aos-easing="linear"
+      data-aos-duration="500"
+    >
       <div className="upper">
         <div className="brand-container">
           <div className="brand">

@@ -3,7 +3,7 @@ import signup from "../assets/signup.png";
 
 const Signup = () => {
   return (
-    <div className="Signup">
+    <div className="Signup" data-aos="fade-up" data-aos-duration="1000">
       <div className="container">
         <div className="content">
           <p className="sub-title">Launching Soon</p>

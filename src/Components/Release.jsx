@@ -5,7 +5,7 @@ import release1 from "../assets/release1.png";
 import release2 from "../assets/release2.png";
 const Release = () => {
   return (
-    <div className="releases">
+    <div data-aos="fade-up" data-aos-duration="1000" className="releases">
       <div className="release orange">
         <div className="content">
           <h2 className="title">Initial Release 4/11</h2>
@@ -24,8 +24,7 @@ const Release = () => {
         </div>
         <div className="image">
           <img src={release1} alt="release" />
-          <div className="ellipse pink">
-          </div>
+          <div className="ellipse pink"></div>
         </div>
       </div>
       <div className="release green">

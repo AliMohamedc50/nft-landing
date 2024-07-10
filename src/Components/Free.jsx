@@ -6,7 +6,7 @@ import Card from './Card';
 
 const Free = () => {
   return (
-    <div className="free">
+    <div data-aos="fade-up" data-aos-duration="1000" className="free">
       <div className="container">
         <div className="background">
           <div className="ellipse pink"></div>
