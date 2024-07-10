@@ -16,18 +16,23 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 import "./scss/index.scss";
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 
 
 function App() {
+
+  const [theme, setTheme] = useState("dark")
+  const changeTheme = () => {
+    theme === "dark" ? setTheme("light") : setTheme("dark");
+  }
   useEffect(() => {
     AOS.init();
   }, []);
   return (
-    <div className="app-container">
+    <div className="app-container" data-theme={theme}>
       <ScrollToTop />
-      <Navbar />
+      <Navbar currentTheme={theme} changeTheme={changeTheme} />
       <Home />
       <Free />
       <Clients />
