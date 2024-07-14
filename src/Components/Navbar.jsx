@@ -8,7 +8,7 @@ const Navbar = ({ currentTheme, changeTheme }) => {
     const [navState, setNavState] = useState(false);
 
   return (
-    <nav data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
+    <nav  >
       <div className="brand-container">
         <div className="brand">
           <img src={logo} alt="Logo" />
