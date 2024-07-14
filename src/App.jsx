@@ -12,8 +12,8 @@ import ScrollToTop from './Components/ScrollToTop'
 import Signup from './Components/Signup';
 import SuperRare from './Components/SuperRare';
 
-import AOS from "aos";
-import "aos/dist/aos.css";
+// import AOS from "aos";
+// import "aos/dist/aos.css";
 
 import "./scss/index.scss";
 import { useEffect, useState } from 'react';
@@ -26,9 +26,9 @@ function App() {
   const changeTheme = () => {
     theme === "dark" ? setTheme("light") : setTheme("dark");
   }
-  useEffect(() => {
-    AOS.init();
-  }, []);
+  // useEffect(() => {
+  //   AOS.init();
+  // }, []);
   return (
     <div className="app-container" data-theme={theme}>
       <ScrollToTop />

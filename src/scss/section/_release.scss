@@ -89,4 +89,58 @@
     .green {
         background-color: var(--green);
     }
+    @media screen and (max-width: 1080px) {
+        margin: 4rem;
+        gap: 2rem;
+        .release {
+            &:first-child {
+                grid-template-columns: 0.7fr 0.3fr;
+            }
+            &:last-child {
+                grid-template-columns: 0.5fr 0.5fr;
+            }
+            padding: 1rem 2rem;
+            gap: 2rem;
+            .content {
+                padding: 0;
+            }
+            .image {
+                zoom: 0.7;
+            }
+            .card-container {
+                zoom: 0.7;
+            }
+            .ellipse {
+                display: none !important;
+            }
+        }
+    }
+    @media screen and (max-width: 700px) {
+        margin: 0rem;
+        gap: 1rem;
+        .release {
+            &:first-child, &:last-child {
+                grid-template-columns: 1fr;
+            }
+            &:first-of-type {
+                .image {
+                    grid-row: 1;
+                }
+            }
+            padding: 1rem 2rem;
+            gap: 2rem;
+            .content {
+                padding: 0;
+            }
+            .image {
+                zoom: 0.7;
+            }
+            .card-container {
+                zoom: 0.7;
+            }
+            .ellipse {
+                display: none !important;
+            }
+        }
+    }
 }

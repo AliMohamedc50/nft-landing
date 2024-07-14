@@ -54,9 +54,10 @@ html {
 
 ::-webkit-scrollbar {
     background-color: #111111;
-    width: 0.2rem;
+    width: 0.5rem;
 }
 
 ::-webkit-scrollbar-thumb {
+    border-radius: 30px;
     background-color: var(--orange);
 }

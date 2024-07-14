@@ -71,4 +71,44 @@
             }
         }
     }
+    @media screen and (max-width: 1080px) {
+        margin: 0;
+        .container {
+            padding: 1rem 2rem;
+            height: 40vh;
+            border-radius: 0;
+            .background {
+                .pink {
+                    left: -70%;
+                }
+                .green {
+                    right: -100%;
+                }
+            }
+            .content {
+                padding: 0;
+                font-size: 16px;
+                gap: 1rem;
+            }
+            .title {
+                font-size: 22px;
+            }
+        }
+        .cards {
+            top: 0;
+            .card1,
+            .card2 {
+                zoom: 0.8;
+            }
+        }
+    }
+    @media screen and  (max-width: 700px) {
+            .cards {
+                top: -2rem;
+                .card1,
+                .card2 {
+                    zoom: 0.4;
+                }
+        }
+    }
 }

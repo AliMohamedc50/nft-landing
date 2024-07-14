@@ -60,6 +60,12 @@ const Footer = () => {
           })}
         </div>
       </div>
+
+
+
+
+
+      
       <div className="lower">
         <span>&copy; Copyright 2022 NFT</span>
         <span>Launching August 2022</span>

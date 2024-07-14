@@ -67,4 +67,58 @@
                     }
         }
     }
+        @media screen and (max-width: 1080px) {
+            padding: 1rem;
+            position: relative;
+            overflow-x: hidden;
+            margin-top: 1rem;
+            .container {
+                font-size: 16px;
+                grid-template-columns: 0.7fr;
+                .image-container {
+                    position: absolute;
+                    top: 0%;
+                    right: 3%;
+                    .image {
+                        img {
+                            height: 19rem;
+                        }
+                    }
+                    .ellipse-container {
+                        .ellipse {
+                            height: 6rem;
+                            width: 6rem;
+                            filter: blur(30px);
+                        }
+                        .pink {
+                            right: 10%;
+                        }
+                        .orange {
+                            left: -5%;
+                        }
+                    }
+                }
+            }
+        }
+    
+        @media screen and (max-width: 700px) {
+            .container {
+                .image-container {
+                    position: absolute;
+                    top: 22%;
+                    right: 3%;
+                    .image {
+                        img {
+                            height: 10rem;
+                        }
+                    }
+                }
+            }
+        }
+}
+
+[data-theme="light"] {
+    .Signup {
+        border-color: black;
+    }
 }

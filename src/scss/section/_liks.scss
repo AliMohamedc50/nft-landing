@@ -21,4 +21,19 @@
             }
         }
     }
+    @media screen and (min-width: 280px) and (max-width: 1080px) {
+        margin: 3rem 0;
+        .container {
+            grid-template-columns: 1fr;
+            gap: 0;
+            .content {
+                text-align: center;
+                padding: 1rem 2rem;
+                border-radius: 0;
+                &:nth-of-type(2) {
+                    background-color: var(--background);
+                }
+            }
+        }
+    }
 }
